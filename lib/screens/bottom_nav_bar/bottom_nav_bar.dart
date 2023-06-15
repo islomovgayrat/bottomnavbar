@@ -12,7 +12,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   int currentIndex = 0;
 
   List screens = const [
-    RedScreen(),
+    YellowScreen(),
     BlackScreen(),
     BlueScreen(),
     WhiteScreen(),
@@ -150,15 +150,15 @@ class WhiteScreen extends StatelessWidget {
   }
 }
 
-class RedScreen extends StatelessWidget {
-  const RedScreen({Key? key}) : super(key: key);
+class YellowScreen extends StatelessWidget {
+  const YellowScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
       height: double.infinity,
-      color: Colors.red,
+      color: Colors.yellow,
     );
   }
 }
